@@ -1,0 +1,156 @@
+/*BOOTSTRAP*/
+body {
+    background-image: url("../images/lolesportsbackground.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+    font-family: 'naslovi';
+    font-weight: bold;
+}
+
+p {
+    font-family: 'paragrafi';
+}
+
+.row {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.kat {
+    float: right;
+    text-align: right;
+    margin-top: 1vw;
+}
+
+.kat a {
+    font-size: large;
+    padding: 2vw;
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.container-fluid a {
+    font-family: 'naslovi';
+    color: white;
+    text-decoration: none;
+}
+
+.container-fluid a:hover {
+    border-bottom: 2px solid red;
+    color: pink;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.skatule {
+    width: 100%;
+    padding: 2vw 0 2vw 0;
+    height: 25vw;
+}
+
+.naslovnidio {
+    padding-top: 1.5vw;
+}
+
+.novslika {
+    height: 11vw;
+    border-radius: 1vw;
+}
+
+.naslov {
+    padding: 1vw 1vw 0 1vw;
+}
+
+.kratop {
+    text-align: justify;
+    padding: 1vw 1.7vw 0 1.7vw;
+}
+
+.kateg {
+    padding-top: 0.5vw;
+}
+
+.kateg span {
+    font-weight: bold;
+    color: gainsboro;
+    text-decoration: none;
+    padding-left: 0.5vw;
+}
+
+.kateg a {
+    vertical-align: text-bottom;
+    padding-left: 9vw;
+    padding-right: 1vw;
+    color: gainsboro;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.kraj {
+    margin-bottom: 5vw;
+}
+
+footer {
+    margin: 3vw;
+    text-align: center;
+}
+
+@media screen and (min-width: 601px) {
+    .container-fluid {
+        background-image: linear-gradient(to right, midnightblue 20%, black 80%);
+    }
+
+    .kat {
+        float: right;
+        margin-top: 2vw;
+        margin-bottom: 3vw;
+    }
+
+    .kat a {
+        font-size: large;
+        padding: 2vw;
+        color: goldenrod;
+        text-decoration: none;
+    }
+
+    .kat a:hover {
+        color: brown;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-fluid {
+        background-color: transparent;
+    }
+    .responzivnost {
+        display: flex;
+        padding: 15vw 0 35vw 0;
+    }
+    .novslika {
+        height: 45vw;
+    }
+    footer {
+        padding-top: 15vw;
+    }
+}
+
+@font-face {
+    font-family: 'naslovi';
+    src: url("../fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: 'paragrafi';
+    src: url("../fonts/Oxygen-Regular.ttf");
+}

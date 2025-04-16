@@ -1,0 +1,142 @@
+/*FLEXBOX*/
+body {
+    background-image: url("../images/lolesportsbackground.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+    font-family: 'naslovi';
+    font-weight: bold;
+}
+
+p {
+    font-family: 'paragrafi';
+}
+
+.gumb {
+    font-family: 'naslovi';
+    font-weight: bold;
+    height: 3vw;
+    width: 10vw;
+    text-transform: uppercase;
+    background-color: #D3D3D3;
+    border-radius: 1vw;
+
+}
+
+.gumb:hover {
+    background-color: #DC143C;
+    color: snow;
+    transition: 0.7s;
+
+}
+
+.kolica {
+    height: 2vw;
+    width: 2vw;
+}
+
+.row {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-fluid a {
+    color: white;
+    text-decoration: none;
+}
+
+.container-fluid a:hover {
+    border-bottom: 2px solid red;
+    color: pink;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.bener {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: hotpink;
+}
+
+.kontejner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.karta {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5vw;
+}
+
+.gmb {
+    display: flex;
+    flex-direction: row;
+}
+
+.prekr {
+    color: #d4d4d4ce;
+    text-decoration: line-through;
+    text-decoration-color: rgb(255, 77, 77);
+}
+
+.tren {
+    color: hotpink;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+footer {
+    margin: 3vw;
+    text-align: center;
+}
+
+@media screen and (min-width: 601px) {
+    .container-fluid {
+        background-image: linear-gradient(to right, midnightblue 20%, black 80%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-fluid {
+        background-color: transparent;
+    }
+
+    .gumb {
+        margin-top: 2vw;
+        height: 10vw;
+        width: 30vw;
+    }
+}
+
+@font-face {
+    font-family: 'naslovi';
+    src: url("../fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: 'paragrafi';
+    src: url("../fonts/Oxygen-Regular.ttf");
+}

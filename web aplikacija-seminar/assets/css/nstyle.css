@@ -1,0 +1,227 @@
+.page {
+    margin: 0 auto;
+    width: 80%;
+}
+
+table,
+th,
+td {
+    border: 1px thick white;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'paragrafi';
+    font-size: large;
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+    font-family: 'naslovi';
+    font-weight: bold;
+}
+
+p,
+b,
+u,
+i {
+    font-family: 'paragrafi';
+}
+
+.table {
+    display: flex;
+}
+
+table {
+    color: white;
+    flex: 100%;
+    margin: 1vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid a {
+    font-family: 'naslovi';
+    color: white;
+    text-decoration: none;
+}
+
+.container-fluid a:hover {
+    border-bottom: 2px solid red;
+    color: pink;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.row {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.headertxt {
+    font-size: x-large;
+    position: relative;
+}
+
+.naslovna {
+    font-family: 'naslovi';
+    font-weight: bold;
+    padding: 3vw 0 0 0;
+    font-size: 64;
+    text-align: center;
+}
+
+body {
+    background-image: url("../images/lolesportsbackground.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.poveznica {
+    padding-top: 2vw;
+    padding-left: 5vw;
+}
+
+a {
+    color: pink;
+}
+
+.prvi {
+    padding-top: 5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.prvinaslov {
+    padding: 1vw;
+}
+
+.prvitxt {
+    text-align: justify;
+    font-size: large;
+    width: 90%;
+}
+
+.prvislk img {
+    height: 15vw;
+    margin: 0%;
+}
+
+.drugi {
+    margin-top: 4vw;
+    display: flex;
+}
+
+.druginaslov {
+    padding: 1vw;
+}
+
+.drugitxt {
+    margin-left: 2vw;
+    text-align: justify;
+    font-size: large;
+    width: 80%;
+}
+
+.drugislk {
+    width: 80%;
+    display: flex;
+    height: 2vw;
+    flex-wrap: wrap;
+}
+
+.drugislk img {
+    margin: 0.3vw;
+    height: 6vw;
+}
+
+.treci {
+    text-align: justify;
+}
+
+.trecinaslov {
+    padding: 1vw;
+}
+
+.treci p {
+    text-align: justify;
+    font-size: large;
+}
+
+footer {
+    margin: 3vw;
+    text-align: center;
+}
+
+@media screen and (min-width: 601px) {
+    .container-fluid {
+        background-image: linear-gradient(to right, midnightblue 20%, black 80%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-fluid {
+        background-color: transparent;
+    }
+    .page {
+        margin: 0 auto;
+        padding: 0;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .prvi {
+        display: flex;
+        flex-direction: column;
+    }
+    .prvinaslov{
+        justify-content: center;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .prvislk {
+        padding: 0;
+        margin: 0 auto;
+    }
+    .prvislk img {
+        height: 40vw;
+    }
+    .prvitxt {
+        padding: 0;
+        margin: 0 auto;
+    }
+    .drugi {
+        padding-top: 4vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .drugislk {
+        padding: 0;
+        margin: 0 auto;
+    }
+    .drugislk img {
+        display: flex;
+        flex-wrap: wrap;
+        height: 10vw;
+    }
+    .drugitxt {
+        padding-top: 30vw;
+        margin: 0 auto;
+    }
+}
+
+@font-face {
+    font-family: 'naslovi';
+    src: url("../fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: 'paragrafi';
+    src: url("../fonts/Oxygen-Regular.ttf");
+}

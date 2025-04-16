@@ -1,0 +1,146 @@
+body {
+    background-image: url("../images/lolesportsbackground.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+    font-family: 'naslovi';
+    font-weight: bold;
+}
+
+p {
+    font-family: 'paragrafi';
+}
+
+.container-fluid a {
+    color: white;
+    text-decoration: none;
+}
+
+.navtxt {
+    padding-top: 0.5vw;
+}
+
+.container-fluid a:hover {
+    border-bottom: 2px solid red;
+    color: pink;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.forma {
+    float: left;
+    width: 40%;
+    padding: 2vw 0 0 7vw;
+}
+
+form p {
+    padding: 0.5vw;
+}
+
+.inf {
+    padding: 0 1vw 0 1vw;
+}
+
+.inf input {
+    padding: 0.5vw 0 0 0;
+}
+
+.inf label {
+    padding-top: 1vw;
+}
+
+.naslov {
+    padding: 1vw 1vw 0.5vw 1vw;
+}
+
+.spol p {
+    padding: 0 0 0 2vw;
+}
+
+.opcije p {
+    padding-left: 2vw;
+}
+
+.opcije label {
+    padding-left: 0.5vw;
+}
+
+.mail {
+    padding: 0 1vw 0 1.5vw;
+}
+
+.uvod {
+    padding: 3vw 0 1vw 5vw;
+}
+
+input[type=text],
+input[type=email] {
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(42, 208, 250);
+    background-color: transparent;
+}
+
+input[type=text]:focus {
+    transition: 0.5s ease;
+    border-bottom: 3px solid peru;
+}
+
+input[type=email]:focus {
+    transition: 0.5s ease;
+    border-bottom: 3px solid peru;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: lawngreen;
+    border: none;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 1vw;
+    margin-left: 4vw;
+    width: 70%;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 60vw;
+    padding: 2vw;
+}
+
+@media screen and (min-width: 601px) {
+    .container-fluid {
+        background-image: linear-gradient(to right, midnightblue 20%, black 80%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-fluid {
+        text-align: center;
+        background-color: transparent;
+    }
+}
+
+@font-face {
+    font-family: 'naslovi';
+    src: url("../fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: 'paragrafi';
+    src: url("../fonts/Oxygen-Regular.ttf");
+}
